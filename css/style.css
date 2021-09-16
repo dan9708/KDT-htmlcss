@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+body {
+  /* 핸드폰에 있는 상태바를 표현한 것 */
+  width: 375px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* index.html */
+.bg1 {
+  height: 44px;
+  background-color: #e5e5e5;
+}
+
+header {
+
+  padding: 0 30px;
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+}
+header > ul {
+  overflow: hidden;
+ 
+}
+header > ul  li {
+  float: left;
+}
+header > ul  li + li {
+  padding-top: 9px;
+}
+
+header h3 {
+  /* padding-top: 9px; */
+  margin: 0 74px 0 84px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  /* border: 1px solid red; */
+}
+
+header >  ul > .qr {
+  margin-right: 13px;
+}
+
+/* 이체 부분 */
+.account-container { padding: 41px 48px 0; background-color: #e5e5e5;}
+.bg2 { position: relative; padding: 14px 0 6px 0; width: 279px; height: 155px; border-radius: 12px; text-align: center; box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);  background-color: #fff; box-sizing: border-box;}
+.account-graphic-chart { display: inline-block;}
+.account-balance {margin-top: 16px; font-size: 24px; font-weight: 500; letter-spacing: 2px;}
+.account-balance > span { font-size: 14px;}
+.account-graphic { margin: 16px 0 12px;}
+.account-transfer > b { position: absolute; top: 14px; right: 17px;}
+.account-notice { font-size: 14px; color: #858585;}
+.ad { padding: 24px 0 21px; font-size: 14px; color: #000;}
+.ad > a {text-decoration: underline;}
+
+/* 사용내역 */
+.transaction-container {  background-color: #E5E5E5;}
+.bg3 { position: relative; padding: 25px 10px 0 10px; height: 383px; border-radius: 30px 30px 0px 0px; background-color: #fff; box-sizing: border-box;}
+.scroll-bar { position: absolute;  top: 4.3px; left: 162px; }
+
+/* 저금통 */
+.transaction-save-item { float: left ; margin-left:13px; width:162px; height: 47px; border-radius: 6px; background-color: #DADADA; box-sizing: border-box;}
+.transaction-save-item-filled { padding: 10px 0 0 13px; width: 97px; height: 47px; border-radius: 6px 0px 0px 6px; font-size: 12px; color: #fff; box-sizing: border-box;}
+.color1 {background-color: #FF5F00; }
+.color2 {background-color: #FEB700; }
+
+/* 오늘 사용내역 */
+.transaction-day { clear: both;  padding: 0 16px; font-size: 14px;}
+.transaction-day-summary{  overflow: hidden; font-size: 14px; }
+.today {padding: 16px 0 8px;}
+.yesterday { padding: 38px 0 5px;}
+.transaction-day-title { float: left; font-weight: bold; }
+.transaction-day-amount {  float: right; color: #B4B4B4;}
+
+.transaction-list { clear: both; font-size: 18px; color: #444; font-weight: 300; line-height: 26px;}
+.transaction-item { overflow: hidden; padding: 8px 0 7px; border-bottom: 1px solid #DCDCDC;}
+.transaction-item-name {float: left;}
+.transaction-item-price { float: right; }
+
+
+.transaction-item-name { clear: both;}
+
+
+
+

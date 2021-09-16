@@ -1,0 +1,4 @@
+/* 공통 - 푸터 */
+.tab-menu {overflow: hidden; padding: 0 26px; height: 58px;  background-color: #00C7A3;}
+.tab-menu li + li {margin-left: 67.67px; }
+.tab-menu-item { float: left; padding-top: 15px; box-sizing: border-box;}
