@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  width: 375px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* chart.html */
+main { height: 1100px; box-sizing: border-box; background-color: #fff; }
+.standard-setting {position: relative; padding-left: 36px; margin-top: 44px; letter-spacing: -0.24px; }
+.standard-setting-title { padding-top: 33px; font-size: 24px; font-weight: 600;}
+.close { position: absolute; top: 0; right: 13px; font-size: 14px; color: #000; font-weight: 300; background-color: transparent; border: none;}
+.setting-amount-color1 { margin-top: 16px; font-size: 18px; color: #444; font-weight: 500;}
+.setting-amount-color2 { margin-top: 12px; font-size: 24px; color: #FF5F00; font-weight: normal; }
+.setting-amount-graph { padding-top: 23px; }
+.standard-setting > p { float: left; }
+.standard-setting > p + p {margin-left: 78px;}
+
+/* 일간 리포트 */
+.daily-report {  margin: 59px 37px 0 31px;}
+.daily-report > p { font-size: 18px; color: #444; font-weight: 500; letter-spacing: -0.24px;}
+
+/* 6월 지출 패턴 */
+.spending-pattern { position: relative; margin: 46px 30px 0 37px; }
+.spending-pattern > p { font-size: 18px; color: #444; font-weight: 500; letter-spacing: -0.24px;}
+.spending-pattern > b { position: absolute; top:184px; left: 85px; font-size: 24px; font-weight: 500; letter-spacing: 2px;}
+.spending-pattern > b > span { font-size: 14px; font-weight: 500;}
+
+/* 사용 내역 */
+.spending-pattern-details { font-size: 18px;}
+.spending-pattern-details > ul > li { overflow: hidden;}
+.spending-pattern-details > ul > li > span { color: #000; font-weight: normal;}
+.spending-pattern-details > ul > li > em { float: right; margin-right: 32px; color: #858585;}
+.spending-pattern-details > ul > li > .oil { margin-right: 21px;}
+.spending-pattern-details > ul > li > .health { margin-right: 18px;}
+.spending-pattern-details > ul > li > .eat { margin: 0 25px 0 4px;}
+.spending-pattern-details > ul > li > .shopping { margin: 0 19px 0 3px;}
+.spending-pattern-details > ul > li > .store { margin: 0 20px 0 4px;}
+
+.shopping-list1 { margin: 18px 0 10.77px;}
+.shopping-list2 { margin-bottom: 16.92px;}
+.shopping-list3 { margin-bottom: 8.92px;}
+.shopping-list4 { margin-bottom: 17.92px;}

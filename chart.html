@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/chartstyle.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <title>지출관리</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <!-- 메인 -->
+  <main>
+    <section class="standard-setting">
+      <h2 class="standard-setting-title">지출 관리</h2>
+      <button class="close">닫기</button>
+      <p class="setting-amount-color1">기준금액설정</p>
+      <p class="setting-amount-color2">2,100,000원</p>
+      <img src="./assets/기준 설정바.svg" alt="" class="setting-amount-graph">
+    </section>
+
+    <section class="daily-report">
+      <p>일간 리포트</p>
+      <canvas id="myChart" ></canvas>
+    </section>
+    <script>
+      let myChart = document.getElementById('myChart').getContext('2d');
+
+      let barChart = new Chart("myChart", {
+        type: 'bar',
+        data: {
+          labels: ['02', '04', '06', '08', '10', '12', '14', '16', '18'],
+          datasets: [{
+            label: [
+              // 'My First Dataset'
+            ],
+            data: [
+              79000,
+              86000,
+              65000,
+              86000,
+              67000,
+              63000,
+              98000,
+              67000,
+              96000
+            ],
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(255, 159, 64)',
+              'rgb(255, 205, 86)',
+              'rgb(75, 192, 192)',
+              'rgb(54, 162, 235)',
+              'rgb(153, 102, 255)',
+              'rgb(255, 99, 132)',
+              'rgb(255, 159, 64)',
+              'rgb(255, 205, 86)'
+            ],
+          }],
+        },
+        options: {
+        legend: {
+          display: false
+        }
+      }
+      });
+
+    </script>
+
+    <section class="spending-pattern">
+      <p>6월 지출 패턴</p>
+      <canvas id="myChart_doughnut" ></canvas>
+      <b>1,736,500<span>원</span></b>
+    </section>
+
+    <section class="spending-pattern-details">
+     <ul>
+       <li class="shopping-list1">
+         <img src="./assets/spending-pattern-icon(1).svg" alt="" class="oil">
+         <span>주유소</span>
+         <em>56,000원</em>
+       </li>
+       <li class="shopping-list2">
+         <img src="./assets/spending-pattern-icon(2).svg" alt="" class="health">
+         <span>건강관리비</span>
+         <em>80,000원</em>
+       </li>
+       <li class="shopping-list3">
+         <img src="./assets/spending-pattern-icon(3).svg" alt="" class="eat">
+         <span>외식비</span>
+         <em>233,000원</em>
+       </li>
+       <li class="shopping-list4">
+         <img src="./assets/spending-pattern-icon(4).svg" alt="" class="shopping">
+         <span>장보기</span>
+         <em>390,000원</em>
+       </li>
+       <li class="shopping-list5">
+         <img src="./assets/spending-pattern-icon(5).svg" alt="" class="store">
+         <span>상점</span>
+         <em>46,000원</em>
+       </li>
+     </ul>
+    </section>
+   
+    <script>
+      let myChart_doughnut = document.getElementById('myChart_doughnut').getContext('2d');
+
+      let doughnutChart = new Chart(myChart_doughnut , {
+        type: 'doughnut',
+        data:{
+          labels:[],
+          datasets:[{
+            label:'My First Dataset',
+            data: [60,20,50,50,40],
+            backgroundColor:[
+            'rgb(189, 91, 0)',
+            'rgb(0, 87, 189)',
+            'rgb(0, 189, 178)',
+            'rgb(254, 194, 41)',
+            'rgb(196, 196, 196)'
+            ],
+            options: {
+              legend: {
+                display: false
+              }
+            },
+            hoverOffset: 5
+          }]
+        }
+      });
+    </script>
+  </main>
+
+  <!-- 푸터 -->
+  <footer>
+    <ul class="tab-menu">
+      <li class="tab-menu-item">
+        <a href="javascript:void(0)">
+          <img src="./assets/tab-menu-item(1).svg" alt="tab-menu1">
+        </a>
+      </li>
+      <li class="tab-menu-item">
+        <a href="javascript:void(0)">
+          <img src="./assets/tab-menu-item(2).svg" alt="tab-menu2">
+        </a>
+      </li>
+      <li class="tab-menu-item">
+        <a href="javascript:void(0)">
+          <img src="./assets/tab-menu-item(3).svg" alt="tab-menu3">
+        </a>
+      </li>
+      <li class="tab-menu-item">
+        <a href="javascript:void(0)">
+          <img src="./assets/tab-menu-item(4).svg" alt="tab-menu4">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
